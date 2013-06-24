@@ -28,6 +28,9 @@ Then, use the `create-project` command to generate a new Symfony application:
 
     php composer.phar create-project symfony/framework-standard-edition path/to/install
 
+If you receive a timeout error when downloading some components, you can set an higher timeout using this command:
+    COMPOSER_PROCESS_TIMEOUT=300 php composer.phar create-project symfony/framework-standard-edition path/to/install
+
 Composer will install Symfony and all its dependencies under the
 `path/to/install` directory.
 
